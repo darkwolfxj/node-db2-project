@@ -5,6 +5,7 @@ exports.up = function(knex) {
         tbl.string("VIN", 17)
             .unique()
             .notNullable()
+            .index()
         tbl.string("Make")
             .notNullable()
         tbl.string("Model")
